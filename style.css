@@ -1,0 +1,243 @@
+/* Overall popup styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    background: #121226;
+    width: 320px;  /* Reduced from 420px */
+    height: 518px; /* Width × 1.618 = 320 × 1.618 = ~518 */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #3e3e5e;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  /* Headings */
+  h2 {
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  h3 {
+    margin: 20px 0 10px;
+    border-bottom: 1px solid #3e3e5e;
+    padding-bottom: 5px;
+    color: #F0F0F0;
+  }
+  /* Button styling */
+  button {
+    padding: 12px 20px;
+    margin: 2px 0;
+    border: none;
+    border-radius: 12px;
+    background: #2426ae;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: block;
+    width: 100%;
+  }
+  button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+  }
+  /* Email display text */
+  p#email {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1e1e3a;
+    padding: 12px;
+    border-radius: 12px;
+  }
+  /* Inbox list styling */
+  ul#inbox {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    max-height: 250px; /* Increased to accommodate taller container */
+    overflow-y: auto;
+    background-color: #1e1e3a;
+    border-radius: 12px;
+    padding: 5px;
+    flex: 1; /* Allow inbox to take remaining space */
+  }
+  ul#inbox li {
+    padding: 8px 12px;
+    border-bottom: 1px solid #2a2a45;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 8px;
+    margin: 5px;
+  }
+  ul#inbox li:hover {
+    background: rgba(70, 73, 255, 0.2);
+  }
+  /* Email viewer styles */
+  .email-detail {
+    margin-top: 15px;
+    text-align: left;
+  }
+  .email-card {
+    background-color: #1e1e3a;
+    color: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    max-height: 200px; /* Optional: limit height and scroll if needed */
+    overflow-y: auto;
+  }
+  
+  .email-card .email-header {
+    border-bottom: 1px solid #2a2a45;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .email-card .email-header .sender,
+  .email-card .email-header .subject {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .email-card .email-body {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  /* Optional: Improve formatting for images and links in the email body */
+  .email-card .email-body img {
+    max-width: 100%;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+  }
+  
+  .email-card .email-body a {
+    color: #4649ff;
+    text-decoration: underline;
+  }
+  
+  /* Toggle switch styling */
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2a2a45;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #4649ff;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  input:checked + .slider {
+    background-color: #2a2a45;
+  }
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+ /* Modal overlay for displaying email details */
+.email-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  .email-modal .email-card {
+    background-color: #1e1e3a;
+    border-radius: 12px;
+    padding: 5px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    max-height: 80%;
+    overflow-y: auto;
+  }
+  
+  .close-modal {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+    color: white;
+    border: 50px red;
+    padding: 10px 20px;
+    border-radius: 0;
+    cursor: pointer;
+    z-index: 10000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0;
+  }
+  
+  .close-modal:hover {
+    background-color: darkred;
+    transform: translateX(-50%); /* Keep the same transform */
+    outline: none;
+  }
+  
+  
+  
+  /* Email card header and body styling */
+  .email-modal .email-header {
+    border-bottom: 1px solid #2a2a45;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .email-modal .email-header .sender,
+  .email-modal .email-header .subject {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .email-modal .email-body {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #e0e0e0;
+    text-align: justify;
+  }
+  .email-modal .email-card .email-body {
+    white-space: pre-wrap;
+  }
+  
