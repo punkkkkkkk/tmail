@@ -1,2 +1,62 @@
-# tmail
-A Fast &amp; Minimalist Temporary Mail Extension
+# TMail - A Fast & Minimalist Temporary Mail Extension
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)  
+
+TMail is a lightweight, efficient, and privacy-focused browser extension that lets you generate temporary email addresses instantly. Protect your real email from spam and keep your primary inbox clean—all while preserving the original formatting of incoming messages.
+
+## Features
+
+- **Instant Email Generation:** Quickly create a unique, temporary email address with one click.
+- **Auto-Copy to Clipboard:** Easily copy the generated email address with a single tap. A subtle "Copied" notification confirms the action.
+- **Integrated Inbox:** View incoming emails directly within the extension, with real-time updates.
+- **Preserved Formatting:** Emails are displayed exactly as sent, with original line breaks and paragraph formatting intact.
+- **Minimalist & Intuitive Interface:** A clean, clutter-free design that emphasizes functionality without unnecessary distractions.
+- **Privacy-Focused:** No personal data is stored. Use TMail to keep your real email private and reduce spam.
+- **Cross-Browser Compatibility:** Works seamlessly on both Google Chrome and Firefox.
+
+## Installation
+
+### For Chrome
+
+1. **Clone or Download the Repository:**  
+   Get the latest version of TMail from GitHub.
+2. **Open Chrome Extensions:**  
+   Navigate to `chrome://extensions/` in your Chrome browser.
+3. **Enable Developer Mode:**  
+   Toggle the Developer Mode switch in the top right corner.
+4. **Load Unpacked Extension:**  
+   Click on **Load unpacked** and select the folder containing the extension.
+5. **Start Using TMail:**  
+   The extension will appear in your toolbar, ready to generate temporary email addresses.
+
+### For Firefox
+
+1. **Clone or Download the Repository:**  
+   Get the latest version of TMail from GitHub.
+2. **Open Firefox Debugging:**  
+   Navigate to `about:debugging#/runtime/this-firefox`.
+3. **Load Temporary Add-on:**  
+   Click **Load Temporary Add-on** and select the `manifest.json` file from the extension folder.
+4. **Permanent Installation:**  
+   For a permanent installation, submit your extension to [Mozilla Add-ons](https://addons.mozilla.org/). This process is free.
+
+## Usage
+
+1. **Generate Email:**  
+   Click the TMail icon in your browser toolbar, then click **Generate Email** to create your temporary email address.
+2. **Copy Email:**  
+   Tap the clipboard icon next to your generated email to copy it to your clipboard. A "Copied" notification will briefly appear below the email.
+3. **View Inbox:**  
+   The integrated inbox updates in real-time as new emails arrive.
+4. **Read Emails:**  
+   Click on any email in the list to view its content in a modal overlay that preserves the original formatting.
+5. **Create New Mail:**  
+   Use the **Create New Mail** button to clear the current session and generate a fresh temporary email address.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For questions, feedback, or issues, please open an issue on the GitHub repository.
