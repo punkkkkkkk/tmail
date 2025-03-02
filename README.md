@@ -4,6 +4,8 @@
 
 TMail is a lightweight, efficient, and privacy-focused browser extension that lets you generate temporary email addresses instantly using the **mail.tm API**. Protect your real email from spam and keep your primary inbox clean—all while preserving the original formatting of incoming messages.
 
+TMail is completely **free to use**. There are **no hidden charges, no subscriptions, and no payment required**. You can generate and manage temporary email addresses without any cost.  
+
 ## Features
 
 - **Instant Email Generation:**  
@@ -51,8 +53,6 @@ TMail is a lightweight, efficient, and privacy-focused browser extension that le
    Navigate to `about:debugging#/runtime/this-firefox`.
 3. **Load Temporary Add-on:**  
    Click **Load Temporary Add-on** and select the `manifest.json` file from the extension folder.
-4. **Permanent Installation:**  
-   For a permanent installation, submit your extension to [Mozilla Add-ons](https://addons.mozilla.org/). This process is free.
 
 ## Usage
 
