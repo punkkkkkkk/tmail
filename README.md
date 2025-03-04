@@ -41,7 +41,7 @@ TMail is completely **free to use**. There are **no hidden charges, no subscript
 3. **Enable Developer Mode:**  
    Toggle the Developer Mode switch in the top right corner.
 4. **Load Unpacked Extension:**  
-   Click on **Load unpacked** and select the folder containing the extension(make sure to extract the file before uploading).
+   Click on **Load unpacked** (in top left corner)and select the folder containing the extension(make sure to extract the file before uploading).
 5. **Start Using TMail:**  
    The extension will appear in your toolbar, ready to generate temporary email addresses.
 
