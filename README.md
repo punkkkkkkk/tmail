@@ -35,13 +35,13 @@ TMail is completely **free to use**. There are **no hidden charges, no subscript
 ### For Chrome
 
 1. **Clone or Download the Repository:**  
-   Get the latest version of TMail from GitHub.
+   Click the green Code button above the files and click on download zip to download the files
 2. **Open Chrome Extensions:**  
    Navigate to `chrome://extensions/` in your Chrome browser.
 3. **Enable Developer Mode:**  
    Toggle the Developer Mode switch in the top right corner.
 4. **Load Unpacked Extension:**  
-   Click on **Load unpacked** and select the folder containing the extension.
+   Click on **Load unpacked** and select the folder containing the extension(make sure to extract the file before uploading).
 5. **Start Using TMail:**  
    The extension will appear in your toolbar, ready to generate temporary email addresses.
 
