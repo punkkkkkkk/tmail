@@ -4,7 +4,7 @@ let currentEmailAccount = null; // Tracks the active email account
 
 // Helper function to generate a meaningful username.
 function generateMeaningfulUsername() {
-  const adjectives = ["thick", "wacky", "quirky", "goofy", "silly",  "bizarre", "droll", "fat", "nutty", "kooky", "bloody", "prick", "hard", "comical", "sexy", "shitty", "golden", "sexy", "thicc"];
+  const adjectives = ["thick", "wacky", "quirky", "goofy", "silly",  "bizarre", "droll", "fat", "nutty", "kooky", "bloody", "prick", "hard", "comical", "shitty", "golden","hot"];
   const animals = ["lion", "tiger", "bear", "fox", "eagle", "wolf", "panther", "leopard", "cheetah", "falcon", "dragon", "table", "griffin", "sword", "shield", "thunder", "guy", "storm", "foot", "leg"];
   const adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
   const animal = animals[Math.floor(Math.random() * animals.length)];
